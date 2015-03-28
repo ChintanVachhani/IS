@@ -33,6 +33,8 @@ int alphaToIndex(char str)    //Accepts a character and returns the index of the
 char indexToAlpha(int index)  //Accepts an index and returns the corresponding character
 {
     char str;
+    if(index<0)
+        index+=26;
     index%=26;
 
     return alphabets[0][index];
