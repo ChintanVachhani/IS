@@ -13,7 +13,7 @@ int main()
     cin>>a;
     cout<<endl<<endl;
 
-    long unsigned int xa,ya,xb,yb;
+    unsigned long long int xa,ya,xb,yb;
     cout<<"Key Generation - User A"<<endl;
     cout<<"\tEnter A's Private Key : ";
     cin>>xa;
@@ -27,7 +27,7 @@ int main()
     yb%=p;
     cout<<"\tB's Public Key is : "<<ya<<endl<<endl;
 
-    long unsigned int k;
+    unsigned long long int k;
     cout<<"Secret Key Calculation "<<endl;
     k=pow(yb,xa);
     k%=p;
